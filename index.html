@@ -281,12 +281,20 @@ function tasteScore(m, c){
 const allowed = m => m && !store.blocked.includes(m.src);
 // Once a day this phone picks its own 50 from today's pool, using what it has learned. Topped up from earlier days if the pool is short.
 function pickToday(){
-  if(store.day===S.batch && Array.isArray(store.picks) && store.picks.length) return;
   const c=tasteCounts();
   const rankBy=list=>list.map(m=>[tasteScore(m,c),m]).sort((a,b)=>b[0]-a[0]).map(x=>x[1]);
-  let picks=rankBy([...S.memes.values()].filter(m=>m.batch===S.batch && !store.swipes[m.id] && allowed(m))).slice(0,DAILY);
-  if(picks.length<DAILY) picks=picks.concat(rankBy([...S.memes.values()].filter(m=>m.batch!==S.batch && !store.swipes[m.id] && allowed(m))).slice(0,DAILY-picks.length));
-  store.day=S.batch; store.picks=picks.map(m=>m.id); persist();
+  // keep today's picks, but drop any meme that's no longer on the site (removed or broken) and top back up to 50
+  let keep = store.day===S.batch && Array.isArray(store.picks) ? store.picks.filter(id=>S.memes.has(id)) : [];
+  if(keep.length>=DAILY){ if(keep.length!==store.picks.length){ store.picks=keep.slice(0,DAILY); persist(); } return; }
+  const have=new Set(keep), fresh=m=>!have.has(m.id) && !store.swipes[m.id] && allowed(m);
+  let add=rankBy([...S.memes.values()].filter(m=>m.batch===S.batch && fresh(m))).slice(0,DAILY-keep.length);
+  if(keep.length+add.length<DAILY) add=add.concat(rankBy([...S.memes.values()].filter(m=>m.batch!==S.batch && fresh(m))).slice(0,DAILY-keep.length-add.length));
+  store.day=S.batch; store.picks=keep.concat(add.map(m=>m.id)); persist();
+}
+// an image that fails to load is treated as gone: swap in another meme so the day still has 50
+function dropBroken(id){
+  if(!S.memes.has(id) || store.swipes[id]) return;
+  S.memes.delete(id); pickToday(); rank(); render();
 }
 function rank(){
   const c=tasteCounts(), top=S.queue[0];
@@ -303,7 +311,7 @@ const ICON = {
 };
 function memeEl(m, cls){
   const el=document.createElement("div"); el.className="meme "+cls; el.dataset.id=m.id;
-  const i=new Image(); i.alt="Meme"; i.decoding="async"; i.draggable=false; i.src=m.file; el.appendChild(i);
+  const i=new Image(); i.alt="Meme"; i.decoding="async"; i.draggable=false; i.onerror=()=>dropBroken(m.id); i.src=m.file; el.appendChild(i);
   return el;
 }
 function render(){
@@ -345,7 +353,7 @@ function act(kind){
   pop(kind);
   if(el){ const tx= kind==="yes"?innerWidth*1.2 : kind==="no"?-innerWidth*1.2 : 0, ty= kind==="save"?-innerHeight:0;
     el.style.transition="transform .3s ease-in, opacity .3s"; el.style.transform=`translate(${tx}px,${ty}px) rotate(${tx/40}deg)`; el.style.opacity=0; }
-  store.swipes[m.id]={v, src:m.src, tags:m.tags||[], t:Date.now()};
+  store.swipes[m.id]={v, src:m.src, tags:m.tags||[], file:m.file, t:Date.now()};
   if(v===2){ store.saved[m.id]={file:m.file,w:m.w,h:m.h,t:Date.now()}; fetch(m.file).then(r=>r.blob()).then(b=>idbPut(m.id,b)).catch(()=>{}); }
   persist();
   S.undo.push(m.id); if(S.undo.length>30) S.undo.shift();
@@ -384,16 +392,20 @@ $("#openLib").onclick=()=>{ $("#lib").hidden=false; renderLib(); };
 
 // ---------- review today's memes ----------
 const R={ids:[], i:0};
-function seenToday(){ return (store.picks||[]).filter(id=>store.swipes[id]&&S.memes.has(id)).sort((a,b)=>store.swipes[a].t-store.swipes[b].t); }
+function seenToday(){ return (store.picks||[]).filter(id=>store.swipes[id] && (S.memes.has(id)||store.swipes[id].file||store.saved[id])).sort((a,b)=>store.swipes[a].t-store.swipes[b].t); }
 function openReview(at){
   R.ids=seenToday(); if(!R.ids.length) return toast("Swipe a few first");
   R.i = at==null ? R.ids.length-1 : Math.max(0,Math.min(at,R.ids.length-1));
-  $("#track").innerHTML=R.ids.map(id=>`<div class="slide"><img alt="Meme" draggable="false" loading="lazy" src="${S.memes.get(id).file}"></div>`).join("");
+  $("#track").innerHTML=R.ids.map(()=>`<div class="slide"><img alt="Meme" draggable="false"></div>`).join("");
   $("#review").hidden=false; paintReview(false);
 }
 function paintReview(anim=true){
   const tr=$("#track"); tr.style.transition=anim?"transform .3s cubic-bezier(.2,.8,.2,1)":"none"; tr.style.transform=`translateX(${-R.i*100}%)`;
   $("#rvCount").textContent=`${R.i+1} / ${R.ids.length}`;
+  // only keep the current meme and two on each side decoded, so 50 big images never pile up in memory
+  [...$("#track").children].forEach((sl,k)=>{ const im=sl.firstChild, id=R.ids[k];
+    if(Math.abs(k-R.i)<=2){ if(!im.getAttribute("src")){ const f=S.memes.get(id)?.file||store.swipes[id]?.file||store.saved[id]?.file; if(f) im.src=f; else srcFor(id).then(u=>{ if(u) im.src=u; }); } }
+    else if(im.getAttribute("src")) im.removeAttribute("src"); });
   prepFile(R.ids[R.i]);
   const cur=store.swipes[R.ids[R.i]]?.v;
   document.querySelectorAll("#review .vb").forEach(b=>b.classList.toggle("on", +b.dataset.v===cur));
@@ -405,7 +417,8 @@ $("#rvClose").onclick=()=>{ $("#review").hidden=true; render(); };
 $("#rvLib").onclick=()=>{ $("#lib").hidden=false; renderLib(); };
 document.querySelectorAll("#review .vb").forEach(b=>b.onclick=()=>{
   const id=R.ids[R.i], m=S.memes.get(id), sw=store.swipes[id], v=+b.dataset.v; if(!sw||sw.v===v) return;
-  if(v===2){ store.saved[id]={file:m.file,w:m.w,h:m.h,t:Date.now()}; fetch(m.file).then(r=>r.blob()).then(bl=>idbPut(id,bl)).catch(()=>{}); toast("Saved to library"); }
+  const file=m?.file||sw?.file;
+  if(v===2){ if(!file) return; store.saved[id]={file,w:m?.w,h:m?.h,t:Date.now()}; fetch(file).then(r=>r.blob()).then(bl=>idbPut(id,bl)).catch(()=>{}); toast("Saved to library"); }
   else if(sw.v>=2){ delete store.saved[id]; idbDel(id); toast(v===1?"Moved to liked":"Removed from saved"); }
   sw.v=v; persist(); paintReview(false);
 });
