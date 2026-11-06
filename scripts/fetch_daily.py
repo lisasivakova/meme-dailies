@@ -49,6 +49,11 @@ BLOCK = re.compile(r"\b(" + "|".join([
     # hate / groups
     r"n[i1]gg\w*", r"fag\w*", r"retard\w*", r"tranny", r"trans", r"pronoun\w*", r"woke", r"incel\w*",
     r"jews?", r"jewish", r"muslims?", r"islam\w*", r"racis\w*", r"slaves?", r"they/them",
+    # games, anime and fan art (not her thing)
+    r"games?", r"gaming", r"gamers?", r"nintendo", r"playstation", r"ps[1-5]", r"xbox", r"gamecube", r"steam", r"fortnite", r"minecraft",
+    r"pok[eé]mon", r"zelda", r"mario", r"cyberpunk", r"warframe", r"valorant", r"genshin", r"elden ring", r"skyrim", r"overwatch",
+    r"roblox", r"twitch", r"speedrun\w*", r"noobs?", r"tf2", r"dnd", r"anime", r"manga", r"waifu", r"fan ?art", r"cosplay", r"oc",
+    r"marvel", r"dc comics", r"spider-?man", r"batman", r"superman", r"avengers", r"sonic", r"yu-?gi-?oh", r"sailor moon", r"one piece", r"naruto",
     # sex
     r"sex\w*", r"porn\w*", r"nudes?", r"naked", r"horny", r"dick\w*", r"cock\w*", r"puss(y|ies)", r"boob\w*", r"tits?",
     r"cum\w*", r"orgasm\w*", r"onlyfans", r"nsfw", r"balls", r"breast\w*", r"erect\w*", r"hentai", r"thirst\w*",

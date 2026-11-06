@@ -17,20 +17,6 @@
    ]
   },
   {
-   "id": "r-1xop86d",
-   "src": "ComedyCemetery",
-   "file": "memes/r-1xop86d.jpg",
-   "w": 640,
-   "h": 421,
-   "batch": "2026-11-05",
-   "added": "2026-11-05T19:22:49+00:00",
-   "link": "https://redd.it/1xop86d",
-   "fp": "e9c998e444dfa582",
-   "tags": [
-    "wordy"
-   ]
-  },
-  {
    "id": "r-1xof621",
    "src": "meirl",
    "file": "memes/r-1xof621.jpg",
@@ -58,21 +44,6 @@
     "internet",
     "posts",
     "romance"
-   ]
-  },
-  {
-   "id": "r-1xmd3al",
-   "src": "meirl",
-   "file": "memes/r-1xmd3al.jpg",
-   "w": 640,
-   "h": 800,
-   "batch": "2026-11-05",
-   "added": "2026-11-05T19:22:52+00:00",
-   "link": "https://redd.it/1xmd3al",
-   "fp": "001103232b11270a",
-   "tags": [
-    "internet",
-    "posts"
    ]
   },
   {
@@ -219,20 +190,6 @@
    "tags": [
     "philosophy",
     "wordy"
-   ]
-  },
-  {
-   "id": "r-1xmp714",
-   "src": "philosophymemes",
-   "file": "memes/r-1xmp714.jpg",
-   "w": 640,
-   "h": 631,
-   "batch": "2026-11-05",
-   "added": "2026-11-05T19:23:04+00:00",
-   "link": "https://redd.it/1xmp714",
-   "fp": "3235f436b61c0ea7",
-   "tags": [
-    "philosophy"
    ]
   },
   {
@@ -467,35 +424,6 @@
    ]
   },
   {
-   "id": "r-1xjfva8",
-   "src": "blursedimages",
-   "file": "memes/r-1xjfva8.jpg",
-   "w": 640,
-   "h": 476,
-   "batch": "2026-11-05",
-   "added": "2026-11-05T19:23:28+00:00",
-   "link": "https://redd.it/1xjfva8",
-   "fp": "6e65796b6535c62d",
-   "tags": [
-    "picture",
-    "surreal"
-   ]
-  },
-  {
-   "id": "a-52015057",
-   "src": "arena:123-memes",
-   "file": "memes/a-52015057.jpg",
-   "w": 1080,
-   "h": 1059,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:02:30+00:00",
-   "link": "https://www.are.na/block/52015057",
-   "fp": "9256c96d74beafd3",
-   "tags": [
-    "wordy"
-   ]
-  },
-  {
    "id": "a-51762365",
    "src": "arena:123-memes",
    "file": "memes/a-51762365.jpg",
@@ -619,20 +547,6 @@
    ]
   },
   {
-   "id": "r-1xomuu4",
-   "src": "bonehurtingjuice",
-   "file": "memes/r-1xomuu4.jpg",
-   "w": 1080,
-   "h": 1080,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:02:44+00:00",
-   "link": "https://redd.it/1xomuu4",
-   "fp": "7766b6971393e564",
-   "tags": [
-    "surreal"
-   ]
-  },
-  {
    "id": "r-1xksgqf",
    "src": "bonehurtingjuice",
    "file": "memes/r-1xksgqf.jpg",
@@ -642,66 +556,6 @@
    "added": "2026-11-06T01:02:45+00:00",
    "link": "https://redd.it/1xksgqf",
    "fp": "814363272797166f",
-   "tags": [
-    "surreal",
-    "wordy"
-   ]
-  },
-  {
-   "id": "r-1xj4k7q",
-   "src": "bonehurtingjuice",
-   "file": "memes/r-1xj4k7q.jpg",
-   "w": 1080,
-   "h": 582,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:02:46+00:00",
-   "link": "https://redd.it/1xj4k7q",
-   "fp": "8c8c0f833416d291",
-   "tags": [
-    "animals",
-    "surreal",
-    "wordy"
-   ]
-  },
-  {
-   "id": "r-1xmxhoj",
-   "src": "bonehurtingjuice",
-   "file": "memes/r-1xmxhoj.jpg",
-   "w": 1080,
-   "h": 876,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:02:47+00:00",
-   "link": "https://redd.it/1xmxhoj",
-   "fp": "4dc3159585539ccc",
-   "tags": [
-    "surreal"
-   ]
-  },
-  {
-   "id": "r-1xne84w",
-   "src": "bonehurtingjuice",
-   "file": "memes/r-1xne84w.jpg",
-   "w": 1080,
-   "h": 784,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:02:48+00:00",
-   "link": "https://redd.it/1xne84w",
-   "fp": "9a8f662725242626",
-   "tags": [
-    "surreal",
-    "wordy"
-   ]
-  },
-  {
-   "id": "r-1xlx8h1",
-   "src": "bonehurtingjuice",
-   "file": "memes/r-1xlx8h1.jpg",
-   "w": 1080,
-   "h": 972,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:02:50+00:00",
-   "link": "https://redd.it/1xlx8h1",
-   "fp": "074747255b4d7553",
    "tags": [
     "surreal",
     "wordy"
@@ -720,34 +574,6 @@
    "tags": [
     "posts",
     "school"
-   ]
-  },
-  {
-   "id": "r-1xl4owk",
-   "src": "NonPoliticalTwitter",
-   "file": "memes/r-1xl4owk.jpg",
-   "w": 640,
-   "h": 459,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:02:53+00:00",
-   "link": "https://redd.it/1xl4owk",
-   "fp": "9e90d2d2caaa92ef",
-   "tags": [
-    "wordy"
-   ]
-  },
-  {
-   "id": "r-1xkaupn",
-   "src": "NonPoliticalTwitter",
-   "file": "memes/r-1xkaupn.jpg",
-   "w": 592,
-   "h": 397,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:02:54+00:00",
-   "link": "https://redd.it/1xkaupn",
-   "fp": "c8c8848c888c843e",
-   "tags": [
-    "wordy"
    ]
   },
   {
@@ -847,20 +673,6 @@
    "link": "https://redd.it/1xnq391",
    "fp": "350c4c70b1862758",
    "tags": []
-  },
-  {
-   "id": "r-1xnh8zg",
-   "src": "me_irl",
-   "file": "memes/r-1xnh8zg.jpg",
-   "w": 640,
-   "h": 627,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:03:05+00:00",
-   "link": "https://redd.it/1xnh8zg",
-   "fp": "59dbd8de9f9cbcb6",
-   "tags": [
-    "wordy"
-   ]
   },
   {
    "id": "r-1xoeln3",
@@ -1080,78 +892,6 @@
    ]
   },
   {
-   "id": "r-1xoa7cq",
-   "src": "UnusualArt",
-   "file": "memes/r-1xoa7cq.jpg",
-   "w": 1080,
-   "h": 1019,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:03:32+00:00",
-   "link": "https://redd.it/1xoa7cq",
-   "fp": "e8d4a8e8e8b23332",
-   "tags": [
-    "art"
-   ]
-  },
-  {
-   "id": "r-1xmi0qw",
-   "src": "UnusualArt",
-   "file": "memes/r-1xmi0qw.jpg",
-   "w": 1080,
-   "h": 852,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:03:33+00:00",
-   "link": "https://redd.it/1xmi0qw",
-   "fp": "9a5dcc6868dad2d0",
-   "tags": [
-    "art",
-    "work"
-   ]
-  },
-  {
-   "id": "r-1xnhmca",
-   "src": "UnusualArt",
-   "file": "memes/r-1xnhmca.jpg",
-   "w": 1080,
-   "h": 1060,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:03:34+00:00",
-   "link": "https://redd.it/1xnhmca",
-   "fp": "cc0e4d8cd6929381",
-   "tags": [
-    "art",
-    "picture"
-   ]
-  },
-  {
-   "id": "r-1xn4bt8",
-   "src": "UnusualArt",
-   "file": "memes/r-1xn4bt8.jpg",
-   "w": 1080,
-   "h": 1080,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:03:35+00:00",
-   "link": "https://redd.it/1xn4bt8",
-   "fp": "2e1d24271a369a92",
-   "tags": [
-    "art"
-   ]
-  },
-  {
-   "id": "r-1xmtq8x",
-   "src": "UnusualArt",
-   "file": "memes/r-1xmtq8x.jpg",
-   "w": 1080,
-   "h": 845,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:03:37+00:00",
-   "link": "https://redd.it/1xmtq8x",
-   "fp": "2b6cf0a7ad91d664",
-   "tags": [
-    "art"
-   ]
-  },
-  {
    "id": "r-1xl86xb",
    "src": "surrealmemes",
    "file": "memes/r-1xl86xb.jpg",
@@ -1211,50 +951,6 @@
     "relatable",
     "surreal",
     "wordy"
-   ]
-  },
-  {
-   "id": "r-1xl4uld",
-   "src": "surrealmemes",
-   "file": "memes/r-1xl4uld.jpg",
-   "w": 1080,
-   "h": 1080,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:03:42+00:00",
-   "link": "https://redd.it/1xl4uld",
-   "fp": "72f0e848cec0c949",
-   "tags": [
-    "surreal",
-    "wordy"
-   ]
-  },
-  {
-   "id": "r-1xkn2gz",
-   "src": "surrealmemes",
-   "file": "memes/r-1xkn2gz.jpg",
-   "w": 489,
-   "h": 697,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:03:43+00:00",
-   "link": "https://redd.it/1xkn2gz",
-   "fp": "5ccc8696d2f0d23e",
-   "tags": [
-    "surreal"
-   ]
-  },
-  {
-   "id": "r-1xkdj0e",
-   "src": "surrealmemes",
-   "file": "memes/r-1xkdj0e.jpg",
-   "w": 640,
-   "h": 699,
-   "batch": "2026-11-06",
-   "added": "2026-11-06T01:03:44+00:00",
-   "link": "https://redd.it/1xkdj0e",
-   "fp": "d6d6ac92b28cb2b2",
-   "tags": [
-    "art",
-    "surreal"
    ]
   },
   {
@@ -1431,91 +1127,112 @@
   }
  ],
  "blocked": [
-  "r-1xmzsim",
-  "r-1xoinm6",
-  "r-1xoe7oz",
-  "r-1xmuw11",
-  "r-1xmqwia",
-  "r-1xn4dep",
-  "r-1xm6k65",
-  "a-51704904",
-  "r-1xla6sm",
-  "r-1xntpt1",
-  "a-52334917",
-  "r-1xolas8",
-  "r-1xoecgo",
-  "r-1xop3rp",
-  "a-52272702",
-  "r-1xkv8ts",
-  "r-1xolr6h",
-  "a-52209150",
-  "r-1xlp9z8",
-  "r-1xnhl5f",
-  "r-1xjomgr",
-  "r-1xo7p3k",
-  "r-1xlq9cm",
-  "r-1xnvnr8",
-  "r-1xohyu9",
-  "r-1xn5jjl",
-  "r-1xlmvbj",
-  "r-1xm2dwi",
-  "r-1xlaaow",
-  "r-1xkntf0",
-  "r-1xnkgy4",
-  "r-1xljrez",
-  "r-1xnrlg7",
-  "r-1xon4jk",
-  "r-1xo0v7j",
-  "r-1xongy2",
-  "r-1xno058",
-  "r-1xo0nvs",
-  "r-1xnkmr7",
-  "r-1xombn6",
-  "r-1xo4wb8",
-  "r-1xojrho",
-  "r-1xoc9tg",
-  "r-1xnq19c",
-  "r-1xlsch1",
-  "a-51507779",
-  "a-51702027",
-  "a-52056805",
-  "r-1xon70o",
-  "r-1xojk61",
-  "r-1xo5cbp",
-  "r-1xmognj",
-  "r-1xoifkw",
-  "r-1xolg69",
-  "r-1xola7r",
-  "r-1xk62ju",
-  "r-1xkg9b2",
-  "r-1xnja98",
-  "r-1xjowgu",
-  "r-1xoein2",
-  "a-52136878",
-  "r-1xmr5gf",
   "a-51488141",
+  "a-51507779",
   "a-51549926",
+  "a-51702027",
+  "a-51704904",
+  "a-52015057",
+  "a-52056805",
+  "a-52136878",
   "a-52175739",
+  "a-52209150",
   "a-52221001",
   "a-52227923",
   "a-52239251",
+  "a-52272702",
   "a-52307610",
+  "a-52334917",
   "a-52389387",
+  "r-1xj4k7q",
+  "r-1xjfva8",
+  "r-1xjomgr",
+  "r-1xjowgu",
+  "r-1xk62ju",
+  "r-1xkaupn",
+  "r-1xkdj0e",
+  "r-1xkg9b2",
+  "r-1xkn2gz",
+  "r-1xkntf0",
+  "r-1xkv8ts",
   "r-1xl3ckp",
+  "r-1xl4owk",
+  "r-1xl4uld",
+  "r-1xla6sm",
+  "r-1xlaaow",
   "r-1xlj7me",
+  "r-1xljrez",
+  "r-1xlmvbj",
   "r-1xlnwgr",
+  "r-1xlp9z8",
+  "r-1xlq9cm",
+  "r-1xlsch1",
+  "r-1xlx8h1",
+  "r-1xm2dwi",
+  "r-1xm6k65",
+  "r-1xmd3al",
+  "r-1xmi0qw",
+  "r-1xmognj",
+  "r-1xmp714",
   "r-1xmpeda",
+  "r-1xmqwia",
+  "r-1xmr5gf",
   "r-1xmsjz3",
+  "r-1xmtq8x",
+  "r-1xmuw11",
+  "r-1xmxhoj",
+  "r-1xmzsim",
+  "r-1xn4bt8",
+  "r-1xn4dep",
+  "r-1xn5jjl",
   "r-1xn6u8w",
+  "r-1xne84w",
+  "r-1xnh8zg",
+  "r-1xnhl5f",
+  "r-1xnhmca",
   "r-1xnikcz",
+  "r-1xnja98",
+  "r-1xnkgy4",
+  "r-1xnkmr7",
   "r-1xnnu0n",
+  "r-1xno058",
   "r-1xnodzi",
+  "r-1xnq19c",
+  "r-1xnrlg7",
+  "r-1xntpt1",
+  "r-1xnvnr8",
   "r-1xnwgfc",
   "r-1xnxdba",
   "r-1xo0iwy",
+  "r-1xo0nvs",
+  "r-1xo0v7j",
   "r-1xo2ukx",
+  "r-1xo4wb8",
+  "r-1xo5cbp",
+  "r-1xo7p3k",
+  "r-1xoa7cq",
+  "r-1xoc9tg",
+  "r-1xoe7oz",
+  "r-1xoecgo",
+  "r-1xoein2",
   "r-1xoh52d",
+  "r-1xohyu9",
+  "r-1xoifkw",
+  "r-1xoinm6",
+  "r-1xojk61",
+  "r-1xojrho",
+  "r-1xola7r",
+  "r-1xolas8",
+  "r-1xolg69",
+  "r-1xolr6h",
+  "r-1xombn6",
+  "r-1xomuu4",
+  "r-1xon4jk",
+  "r-1xon70o",
+  "r-1xongy2",
   "r-1xonko2",
+  "r-1xop3rp",
+  "r-1xop86d",
   "r-1xopo6a",
   "r-1xor88f",
   "r-1xoricw",
@@ -1528,5 +1245,5 @@
   "r-1xoxjc5",
   "r-1xoyyev"
  ],
- "updated": "2026-11-06T01:30:38+00:00"
+ "updated": "2026-11-06T01:42:30+00:00"
 }

@@ -52,6 +52,8 @@ If something slips through, add its id (from `memes.json`) to the `"blocked"` li
 5. From then on it runs by itself every morning. **Actions → Daily memes → Run workflow** fetches a new batch right away.
 6. On iPhone, open the site in Safari → Share → **Add to Home Screen**.
 
+About once a month the workflow commits a tiny `.github/heartbeat.txt`, because GitHub pauses scheduled workflows after 60 days without commits. This needs **Settings → Actions → General → Workflow permissions → Read and write**.
+
 Images are never committed to git. Each run downloads the current memes from the live site, adds today's, removes ones
 older than 10 days and republishes, so the repo stays small. Saved memes are kept on each phone, so they never disappear.
 
